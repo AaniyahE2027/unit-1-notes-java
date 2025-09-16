@@ -50,5 +50,34 @@ public class Main {
 
       // Watch out for the plus sign
       System.out.println (3 + "3"); // int plus string results in string
+
+      // You can set one variable to another's value
+      int zach_age = 16;
+      int aaniyah_age = zach_age;
+      // both variable above contains the same value
+
+      //Practice copying & re-assigning values
+      int x = 15;
+      int y = 21;
+      int z = 2;
+      x = y; //x now stores the same value as y
+      y = y * 2;
+      z = 27;
+      System.out.println("X is " + x);
+      System.out.println("Y is " + y);
+      System.out.println("Z is " + z);
+
+      //type mismatch error
+      double num1 = 3; // an int would cause an error below!
+      double num2 = 3.14;
+      num1 = num2 * 2; // cant fit a double in an int
+      System.out.println(num1); 
+
+      // INCREMENT: add on to current value
+      int points = 0;
+      points = points + 1;
+      // DECREMENT: decrease an existing value
+      points = points - 15;
+      System.out.println(points);
    }
 }
