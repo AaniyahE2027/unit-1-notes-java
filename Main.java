@@ -79,5 +79,35 @@ public class Main {
       // DECREMENT: decrease an existing value
       points = points - 15;
       System.out.println(points);
+
+      //CASTING (convert data types)
+      int originalValue = 5;
+      double castDouble = (double) originalValue;
+      System.out.println("Cast to double " + castDouble); 
+      int castInt = (int) castDouble;
+      System.out.println("Cast back to int " + castInt);
+      
+      // Examples of math and casting
+      System.out.println(3/4); //0
+      System.out.println(3.0/4); //0.75
+      System.out.println(3/4.0); //0.75
+      System.out.println((double)3/4); //0.75
+      // casting preserved the decimal place (no truncation)
+      System.out.println((int)3.0/4); //0 (truncated)
+
+      // Casting is helpful when dividing integers
+      int apcs = 13;
+      int juniors = 40;
+      double csPercent = (double) apcs/juniors;
+      System.out.println(csPercent); //0.325
+
+      //ROUNDING by casting
+      double positiveNum = 223.09;
+      double negativeNum = -67.41;
+      int nearestPositive = (int) (positiveNum + 0.5);
+      int nearestNeg = (int) (negativeNum - 0.5);
+      System.out.println(nearestPositive);
+      System.out.println(nearestNeg);
+      
    }
 }
